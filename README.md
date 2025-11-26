@@ -3,3 +3,7 @@ We are developing a novel architecture based on the Abel-Jacobi (AJ) map, which 
 As it stands, our pipeline nicely beats the 2d projection model and is quite competitive with the 2g x 2g baseline. It consists of (1) a notebook which generates the right number of cuts for a genus g hyperelliptic Riemann surface, and pre-computes the Abel-Jacobi integrals on a grid, and (2) a training notebook which defines the AJ activation and implements it. The pipeline here is not completely faithful to the AJ map yet, because the integrands do not change sign upon crossing a cut, which should be relatively easy to upgrade next.  
 
 A control model to consider, in addition to the 2g x 2g baseline and the 2d projection model, is a random 2 \to 2g activation.  We have also developed a random fourier features model to compare to --it's doing a bit worse on MNIST but we need to check this comparison in more detail.  
+
+
+## Folder Structure:
+ - Higher Genus Tables - Calculations of the integral tables compatible with MPS/CUDA
